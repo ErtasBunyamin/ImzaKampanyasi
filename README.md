@@ -1,2 +1,2 @@
 # ImzaKampanyasi
-1. adım Staj İmza Kampası
+1. adım: İmza Kampası
