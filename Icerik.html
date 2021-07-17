@@ -20,76 +20,71 @@
 	</header>
 	<body>
 		<!--Navbar---------------------------->
-		<nav class="navbar nav-shadow navbar-expand-lg navbar-dark fixed-top bg-dark">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+		<nav class="navbar navbar-expand-md navbar-dark nav-shadow fixed-top">
+		<div class="container-fluid">
+			<a href="#" class="navbar-brand">ImzaKampanyam.com</a>
+			
+			<button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
+				<span class="menu-icon-bar"></span>
 			</button>
-		  	<div class="collapse navbar-collapse py-3" id="navbarNavDropdown">
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link text-white" href="Icerik.html#imageSlider">Resimler</a>
-			  	</li>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="Icerik.html#info">Kampanya Açıklama</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="Icerik.html#proggress">Kampanya Destek Sayısı</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-white" href="Icerik.html#support">Destek Ol!</a>
-				</li>
-			</ul>
-		  </div>
-		  <!--logo-->
-		  <i class="fas fa-signature text-center px-4" style="color: white;"></i>
-		</nav>
-		
-		<!--Image Slider --------------------->
-		<div id="imageSlider" class="container-fluid  px-3" style="padding-top: 100px;" align="center">
-			<div class="nav-shadow py-4 my-4" data-am-fadeshow="next-prev-navigation">
-
-			<!-- Radio -->
-			<input type="radio" name="css-fadeshow" id="slide-1" />
-			<input type="radio" name="css-fadeshow" id="slide-2" />
-			<input type="radio" name="css-fadeshow" id="slide-3" />
-
-			<!-- Slides -->
-			<div class="fs-slides bg-dark ">
-				<div class="fs-slide" style="background-image: url(https://assets.change.org/photos/5/nq/cx/jwnQCXunxOLlnuN-800x450-noPad.jpg?1586767979);"></div>
-					<!-- Add content to images (sample) -->
-				<div class="fs-slide" style="background-image: url(https://yucelenhastanesi.com/uploaddr//resizedsma-hastasi-bebek.jpg);"></div>
-				<div class="fs-slide" style="background-image: url(https://cdnuploads.aa.com.tr/uploads/Contents/2020/08/15/thumbs_b_c_90041d855ab3e7223e0b70173c8b5816.jpg);"></div>
+			
+			<div id="main-nav" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li><a href="Icerik.html#info" class="nav-item nav-link">Kampanya Açıklama</a></li>
+					<li><a href="Icerik.html#imageSlider" class="nav-item nav-link">Resimler</a></li>
+					<li><a href="Icerik.html#proggress" class="nav-item nav-link">Kampanya Destek Sayısı</a></li>
+					<li><a href="Icerik.html#support" class="nav-item nav-link active">Destek Ol!</a></li>
+				</ul>
 			</div>
-
-			<!-- Quick Navigation -->
-			<div class="fs-quick-nav">
-				<label class="fs-quick-btn" for="slide-1"></label>
-				<label class="fs-quick-btn" for="slide-2"></label>
-				<label class="fs-quick-btn" for="slide-3"></label>
-			</div>
-
-			<!-- Prev Navigation -->
-			<div class="fs-prev-nav">
-				<label class="fs-prev-btn" for="slide-1"></label>
-				<label class="fs-prev-btn" for="slide-2"></label>
-				<label class="fs-prev-btn" for="slide-3"></label>
-			</div>
-
-			<!-- Next Navigation -->
-			<div class="fs-next-nav">
-				<label class="fs-next-btn" for="slide-1"></label>
-				<label class="fs-next-btn" for="slide-2"></label>
-				<label class="fs-next-btn" for="slide-3"></label>
-			</div>
-
 		</div>
-	
+	</nav>
+		<!--Image Slider --------------------->
+			<!--space for fixed navbar-->
+		<div class="container-fluid" style="height: 70px"></div>
+		<div id="imageSlider" class="container-fluid bg-dark justify-content-center p-3 my-3" align="center">
+			<div id="frame" class="nav-shadow  my-4" data-am-fadeshow="next-prev-navigation">
+
+				<!-- Radio -->
+				<input type="radio" name="css-fadeshow" id="slide-1" />
+				<input type="radio" name="css-fadeshow" id="slide-2" />
+				<input type="radio" name="css-fadeshow" id="slide-3" />
+
+				<!-- Slides -->
+				<div class="fs-slides bg-dark ">
+					<div class="fs-slide" style="background-image: url(https://assets.change.org/photos/5/nq/cx/jwnQCXunxOLlnuN-800x450-noPad.jpg?1586767979);"></div>
+					<div class="fs-slide" style="background-image: url(https://yucelenhastanesi.com/uploaddr//resizedsma-hastasi-bebek.jpg);"></div>
+					<div class="fs-slide" style="background-image: url(https://cdnuploads.aa.com.tr/uploads/Contents/2020/08/15/thumbs_b_c_90041d855ab3e7223e0b70173c8b5816.jpg);"></div>
+				</div>
+
+				<!-- Quick Navigation -->
+				<div class="fs-quick-nav">
+					<label class="fs-quick-btn" for="slide-1"></label>
+					<label class="fs-quick-btn" for="slide-2"></label>
+					<label class="fs-quick-btn" for="slide-3"></label>
+				</div>
+
+				<!-- Prev Navigation -->
+				<div class="fs-prev-nav">
+					<label class="fs-prev-btn" for="slide-1"></label>
+					<label class="fs-prev-btn" for="slide-2"></label>
+					<label class="fs-prev-btn" for="slide-3"></label>
+				</div>
+
+				<!-- Next Navigation -->
+				<div class="fs-next-nav">
+					<label class="fs-next-btn" for="slide-1"></label>
+					<label class="fs-next-btn" for="slide-2"></label>
+					<label class="fs-next-btn" for="slide-3"></label>
+				</div>
+			</div>
 		</div>
 		
 		<!--Info about campaign--------------->
 		<div id="info"class="container-fluid justify-content-center bg-dark">
 			<div style="color: white; font-family: sans-serif; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
-				<h1 class="py-4" style="font-size: 3vw; font-weight: bold; text-align: center;">8 Aylık Yeğenim Nehir Bebeğin Yaşaması Bu İlaca Bağlı</h1>
+				<h1 class="py-5" style="font-size: 3vw; font-weight: bold; text-align: center;">8 Aylık Yeğenim Nehir Bebeğin Yaşaması Bu İlaca Bağlı</h1>
 				<blockquote class="blockquote">
 				<p id="infoText" class="py-4 lead">
 					<strong>8 aylık biricik yeğenim Nehir</strong>, ölümcül SMA Tip1 hastası.
@@ -127,7 +122,7 @@
 		</div>
 		
 		<!--Info about Success---------------->
-		<div id="proggress" class="col bg-dark py-3 my-3" style="margin-top: 0;">
+		<div id="proggress" class="col bg-dark py-5 my-5" style="margin-top: 0;">
 			<!--count of signature-->
 			<div class="row justify-content-center">
 				<div style="color: white; font-family: sans-serif; text-shadow: 0 0 20px rgba(0,0,0,0.5);">
@@ -160,7 +155,7 @@
 				  İmza Ver!
 			</button>
 			<div id="userForm" class="collapse in">		
-				<form>
+				<form action="Destek.html">
 					<h2 class="p-4"align="center">Kampanya&nbsp;İmzalama&nbsp;Formu</h2>
 				  <div class="form-row">
 					<div class="form-group col-md-6">
@@ -175,13 +170,15 @@
 				  <div class="form-group">
 					<label for="inputEmail">E-Posta</label>
 					<input type="email" class="form-control" id="inputEmail" placeholder="example@mail.com" required>
-</div>
+				  </div>
 				  <div class="form-group">
 					<label for="inputJob">Çalışma Ünvanı</label>
 					<input type="text" class="form-control" id="inputjob" placeholder="Mühendis vb." required>
 					</div>
-				  <div class="p-3" align="center">
-					  <a type="submit" class="btn-grad-check"><i class="fa fa-check"></i>ONAYLA</a>
+				  <div class="py-4" align="center">
+					  <button id="buttonSignCheck" class="btn-grad-check">
+					  	<i class="fa fa-check"></i> ONAYLA			
+					  </button>
 				  </div>
 				</form>
 			</div>		
