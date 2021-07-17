@@ -1,0 +1,119 @@
+:root{
+	
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: cursive;
+}
+
+
+.btn-grad {
+	font-weight: 600;
+	background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)
+}
+.btn-grad {
+	margin: 10px;
+	padding: 15px 45px;
+	font-family: cursive;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.4s;
+	background-size: 200% auto;
+	color:#343a40;            
+	box-shadow: 0 0 18px #000;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	display: block;
+	border: none;
+    outline: none;
+  }
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #343a40;
+	font-weight: 600;
+	font-size: 110%;
+	text-decoration: none;
+  }
+.btn-grad:focus {
+	border: none;
+	outline: none;
+}
+
+
+
+.btn-grad-check {
+	background-image: linear-gradient(to right, #00C9FF 0%, #92FE9D  51%, #00C9FF  100%)
+}
+.btn-grad-check {
+	margin: 10px;
+	padding: 15px 45px;
+	font-weight: bold;
+	
+	text-align: center;
+	text-justify: auto;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: #343a40;            
+	box-shadow: 0 0 18px #000;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: none;
+	display: block;
+	outline: none;
+}
+.btn-grad-check:hover {
+background-position: right center; /* change the direction of the change here */
+color: #343a40;
+text-decoration: none;
+}
+.btn-grad-check:focus {
+	border: none;
+	outline: none;
+}
+
+.nav-item {
+	margin-left: 10px; 	
+}
+.nav-link {
+	font-family: sans-serif;
+	color: white;
+	transition: font-size 0.3s, color 0.3s;
+	text-shadow: 0 0 20px rgba(0,0,0,0.5);
+	font-size: 1.5vw; font-weight: 100; margin-top: 0;
+}
+.nav-link:focus-within {
+	font-weight: 600;
+	font-size: 1.6vw;
+}
+#userForm {
+	max-width: 500px;
+	padding-top: 20px;
+	text-align: left;
+}
+
+.nav-shadow {
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #000;
+}
+#infoText {
+	font-size: 1.5vw; font-weight: 100; margin-top: 0; margin-bottom: 0;padding-left: 5%;
+		 padding-right: 5%;
+}
+
+/*for destek.html*/
+#page {
+        position: absolute;
+        width: 70%;
+        height: 100vh;
+        left: 0;
+        background: linear-gradient(307.71deg, #038900 0%, #2FE900 86.29%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px 0px 40px 0px;
+}
+
+
+ 
