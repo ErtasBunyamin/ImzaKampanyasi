@@ -20,19 +20,21 @@
 <body style="background-color: darkgray">
 	<div class="full-screen">
 		<div class="row justify-content-center" >
+			<!--section for thanks-text-->
 			<div id="page" class="col-md-8 justify-content-end d-flex align-items-center">
 				<div class="container-fluid" style=" position: absolute; color: white; font-family: sans-serif; text-shadow: 0 0 20px rgba(0,0,0,0.5); padding-left: 3vw;  font-size: 1.6rem;">
 					<div class="container my-5 text-white">
 						<h1>Desteğiniz İçin Teşekkürler !</h1>
 					</div>
 					<div class="container my-5 text-white" style="padding-top: 3vh" >
-						<p>Sayın Bünyamin Ertaş</p>
+						<p>Sayın <span id="signature-owner-name"/></p>
 						<p id="thanks-text">Kampanyamıza vermiş olduğunuz destekle bir bağışa katkıda bulundunuz.Vermiş olduğunuz bu destekten dolayı sizlere Teşekkür eder,hayatınızda Sağlıklı,Mutlu Ve Başarılı günler dileriz..</p>
 					</div>
 				</div>
 				<img class="flex-d justify-content-end align-items-end " src="images/check-mark%201.png" 
 				 style="position: inherit; height: 100px; margin-top: auto;  margin-right: 40px; margin-bottom: 40px;">
 			</div>
+			<!--section for info about progress-->
 			<div class="col align-self-center" style="padding: 0;">
 				<div id="infoSupport" align="center" class="flex-d py-5 text-uppercase">
 					<h1>Bu kampanyayı<br> 
@@ -48,5 +50,14 @@
 			</div>
     	</div>
 	</div>
+	<!--for get person name surname who signature to campaigne-->
+	<script>
+		window.addEventListener('load',()=>{
+			const params = (new URL(document.location)).searchParams;
+			const name = params.get('inputName');
+			const surname = params.get('inputSurname');
+			document.getElementById('signature-owner-name').innerHTML = name.concat(" "+surname);
+		})
+	</script>
 </body>    
 </html>
